@@ -11,6 +11,8 @@
 		67667BD122CCD830002B1F0A /* TopicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67667BD022CCD830002B1F0A /* TopicViewCell.swift */; };
 		67667BD322CCD8E7002B1F0A /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67667BD222CCD8E7002B1F0A /* PostViewCell.swift */; };
 		67667BD522CCD8FB002B1F0A /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67667BD422CCD8FB002B1F0A /* PostTableViewController.swift */; };
+		67667BD722CCEB82002B1F0A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67667BD622CCEB82002B1F0A /* Post.swift */; };
+		67667BDA22CCEC36002B1F0A /* EnumVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67667BD922CCEC36002B1F0A /* EnumVote.swift */; };
 		67DF0CCD22CB497400F55296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF0CCC22CB497400F55296 /* AppDelegate.swift */; };
 		67DF0CCF22CB497400F55296 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF0CCE22CB497400F55296 /* LoginViewController.swift */; };
 		67DF0CD222CB497400F55296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DF0CD022CB497400F55296 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		67667BD022CCD830002B1F0A /* TopicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewCell.swift; sourceTree = "<group>"; };
 		67667BD222CCD8E7002B1F0A /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 		67667BD422CCD8FB002B1F0A /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		67667BD622CCEB82002B1F0A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		67667BD922CCEC36002B1F0A /* EnumVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumVote.swift; sourceTree = "<group>"; };
 		67DF0CC922CB497400F55296 /* Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DF0CCC22CB497400F55296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67DF0CCE22CB497400F55296 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				67667BD222CCD8E7002B1F0A /* PostViewCell.swift */,
 				67667BD422CCD8FB002B1F0A /* PostTableViewController.swift */,
+				67667BD622CCEB82002B1F0A /* Post.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -126,6 +131,14 @@
 			children = (
 			);
 			path = PostWriter;
+			sourceTree = "<group>";
+		};
+		67667BD822CCEC10002B1F0A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				67667BD922CCEC36002B1F0A /* EnumVote.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		67DF0CC022CB497400F55296 = {
@@ -152,6 +165,7 @@
 		67DF0CCB22CB497400F55296 /* Sample App */ = {
 			isa = PBXGroup;
 			children = (
+				67667BD822CCEC10002B1F0A /* Misc */,
 				67667BCD22CCD780002B1F0A /* PostWriter */,
 				67667BCC22CCD774002B1F0A /* TagSelector */,
 				67667BCB22CCD74D002B1F0A /* Posts */,
@@ -335,7 +349,9 @@
 				67667BD522CCD8FB002B1F0A /* PostTableViewController.swift in Sources */,
 				67DF0CCF22CB497400F55296 /* LoginViewController.swift in Sources */,
 				67DF0CCD22CB497400F55296 /* AppDelegate.swift in Sources */,
+				67667BDA22CCEC36002B1F0A /* EnumVote.swift in Sources */,
 				67667BCF22CCD7E8002B1F0A /* TopicViewController.swift in Sources */,
+				67667BD722CCEB82002B1F0A /* Post.swift in Sources */,
 				67667BD322CCD8E7002B1F0A /* PostViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

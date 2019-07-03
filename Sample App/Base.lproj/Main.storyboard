@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mG9-J5-NQW">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,16 +50,16 @@
         <scene sceneID="1F1-jt-udt">
             <objects>
                 <tableViewController id="mG9-J5-NQW" customClass="PostTableViewController" customModule="Sample_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LUR-je-FRh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LUR-je-FRh" customClass="PostView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="173" id="lll-c5-z3x" customClass="PostViewCell" customModule="Sample_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="173"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="205" id="lll-c5-z3x" customClass="PostViewCell" customModule="Sample_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="205"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lll-c5-z3x" id="gsa-Gt-AKM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title of the post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wew-cj-m1a">
@@ -69,26 +69,72 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5so-c7-wjw">
-                                            <rect key="frame" x="75" y="50" width="319" height="96"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <string key="text">Description of the post. This should be exaustive and complete, giving a clear view about the details of the problem and possibly some solutions for it</string>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5so-c7-wjw">
+                                            <rect key="frame" x="84" y="50" width="1158" height="96"/>
+                                            <string key="text">Description of the post. This should be exaustive and complete, giving a clear view about the details of the problem and possibly some solutions for it __</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g9-FH-52f">
-                                            <rect key="frame" x="20" y="99" width="47" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="DOWN"/>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpN-gj-Mkb">
-                                            <rect key="frame" x="20" y="61" width="30" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-Jz-TtP">
+                                            <rect key="frame" x="20" y="145" width="39" height="30"/>
                                             <accessibility key="accessibilityConfiguration" label="ù"/>
-                                            <state key="normal" title="UP"/>
+                                            <state key="normal" title="#tag1"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-Ds-OpN">
+                                            <rect key="frame" x="66" y="145" width="41" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="#tag2"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g9-FH-52f">
+                                            <rect key="frame" x="20" y="99" width="47" height="30"/>
+                                            <state key="normal" title="DOWN">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ug8-9x-B8j">
+                                            <rect key="frame" x="114" y="145" width="41" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="#tag3"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bha-ke-Pgs">
+                                            <rect key="frame" x="20" y="170" width="77" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="searchkey1"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkB-1y-MdZ">
+                                            <rect key="frame" x="105" y="170" width="79" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="searchkey2"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCq-2B-PGj">
+                                            <rect key="frame" x="192" y="169" width="79" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="searchkey3"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpN-gj-Mkb">
+                                            <rect key="frame" x="20" y="61" width="30" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" label="ù"/>
+                                            <state key="normal" title="UP">
+                                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="YSA-Jz-TtP" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="Amv-Te-pzi"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="Cb2-oh-0VI"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="leading" secondItem="3g9-FH-52f" secondAttribute="leading" id="DnJ-N1-IZ6"/>
+                                        <constraint firstItem="BkB-1y-MdZ" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="EwP-iE-fKh"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="baseline" secondItem="BkB-1y-MdZ" secondAttribute="baseline" id="IUb-qM-c4W"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="top" secondItem="5so-c7-wjw" secondAttribute="bottom" constant="24" id="Kxa-75-vzq"/>
+                                        <constraint firstItem="ug8-9x-B8j" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="OYS-AD-Oao"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="leading" secondItem="ZpN-gj-Mkb" secondAttribute="leading" id="PjN-Sk-Tdz"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bha-ke-Pgs" secondAttribute="bottom" constant="2" id="kqw-xX-0oE"/>
+                                        <constraint firstItem="wCq-2B-PGj" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="l0N-Q3-xhf"/>
+                                        <constraint firstItem="gZg-Ds-OpN" firstAttribute="centerX" secondItem="gsa-Gt-AKM" secondAttribute="centerX" id="oQl-LQ-Xxz"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Bha-ke-Pgs" secondAttribute="bottom" constant="-6" id="pZe-zt-irU"/>
+                                        <constraint firstItem="Bha-ke-Pgs" firstAttribute="leading" secondItem="gsa-Gt-AKM" secondAttribute="leading" constant="8" id="ysc-0f-88J"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
