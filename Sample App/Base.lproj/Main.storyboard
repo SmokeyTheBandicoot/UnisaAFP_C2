@@ -70,8 +70,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5so-c7-wjw">
-                                            <rect key="frame" x="84" y="50" width="310" height="96"/>
-                                            <string key="text">Description of the post. This should be exaustive and complete, giving a clear view about the details of the problem and possibly some solutions for it __</string>
+                                            <rect key="frame" x="84" y="50" width="1158" height="96"/>
+                                            <string key="text">Description of the post. This should be exaustive and complete, giving a clear view about the details of the problem and possibly some solutions for it </string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
