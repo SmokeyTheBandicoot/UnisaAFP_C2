@@ -6,13 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		67DF0CCD22CB497400F55296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DF0CCC22CB497400F55296 /* AppDelegate.swift */; };
-		67DF0CD222CB497400F55296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DF0CD022CB497400F55296 /* Main.storyboard */; };
-		67DF0CD422CB497500F55296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DF0CD322CB497500F55296 /* Assets.xcassets */; };
-		67DF0CD722CB497500F55296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DF0CD522CB497500F55296 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		67DF0CDE22CB497500F55296 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,15 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		67DF0CC922CB497400F55296 /* Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67DF0CCC22CB497400F55296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67DF0CD122CB497400F55296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		67DF0CD322CB497500F55296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		67DF0CD622CB497500F55296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		67DF0CD822CB497500F55296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67DF0CDD22CB497500F55296 /* Sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67DF0CE822CB497500F55296 /* Sample AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67DF0CFD22CB4AF400F55296 /* Sample App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample App.entitlements"; sourceTree = "<group>"; };
+		67DF0CC922CB497400F55296 /* Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Sample App.app"; path = "/Users/mgargiulo/Desktop/IOS/Progetti xCode/SampleProject/Sample App copia/build/Debug-iphoneos/Sample App.app"; sourceTree = "<absolute>"; };
+		67DF0CDD22CB497500F55296 /* Sample AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Sample AppTests.xctest"; path = "/Users/mgargiulo/Desktop/IOS/Progetti xCode/SampleProject/Sample App copia/build/Debug-iphoneos/Sample AppTests.xctest"; sourceTree = "<absolute>"; };
+		67DF0CE822CB497500F55296 /* Sample AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Sample AppUITests.xctest"; path = "/Users/mgargiulo/Desktop/IOS/Progetti xCode/SampleProject/Sample App copia/build/Debug-iphoneos/Sample AppUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,32 +57,7 @@
 		67DF0CC022CB497400F55296 = {
 			isa = PBXGroup;
 			children = (
-				67DF0CCB22CB497400F55296 /* Sample App */,
-				67DF0CCA22CB497400F55296 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		67DF0CCA22CB497400F55296 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				67DF0CC922CB497400F55296 /* Sample App.app */,
-				67DF0CDD22CB497500F55296 /* Sample AppTests.xctest */,
-				67DF0CE822CB497500F55296 /* Sample AppUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		67DF0CCB22CB497400F55296 /* Sample App */ = {
-			isa = PBXGroup;
-			children = (
-				67DF0CFD22CB4AF400F55296 /* Sample App.entitlements */,
-				67DF0CCC22CB497400F55296 /* AppDelegate.swift */,
-				67DF0CD022CB497400F55296 /* Main.storyboard */,
-				67DF0CD322CB497500F55296 /* Assets.xcassets */,
-				67DF0CD522CB497500F55296 /* LaunchScreen.storyboard */,
-				67DF0CD822CB497500F55296 /* Info.plist */,
-			);
-			path = "Sample App";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +153,7 @@
 				Base,
 			);
 			mainGroup = 67DF0CC022CB497400F55296;
-			productRefGroup = 67DF0CCA22CB497400F55296 /* Products */;
+			productRefGroup = 67DF0CC022CB497400F55296;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -207,9 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DF0CD722CB497500F55296 /* LaunchScreen.storyboard in Resources */,
-				67DF0CD422CB497500F55296 /* Assets.xcassets in Resources */,
-				67DF0CD222CB497400F55296 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DF0CCD22CB497400F55296 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,25 +224,6 @@
 			targetProxy = 67DF0CE922CB497500F55296 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		67DF0CD022CB497400F55296 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67DF0CD122CB497400F55296 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		67DF0CD522CB497500F55296 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67DF0CD622CB497500F55296 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		67DF0CEF22CB497500F55296 /* Debug */ = {
@@ -446,7 +385,6 @@
 		67DF0CF522CB497500F55296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3JF5VZKMR;
@@ -467,7 +405,6 @@
 		67DF0CF622CB497500F55296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3JF5VZKMR;
@@ -488,7 +425,6 @@
 		67DF0CF822CB497500F55296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3JF5VZKMR;
 				INFOPLIST_FILE = "Sample AppUITests/Info.plist";
@@ -508,7 +444,6 @@
 		67DF0CF922CB497500F55296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W3JF5VZKMR;
 				INFOPLIST_FILE = "Sample AppUITests/Info.plist";

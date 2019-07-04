@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtz: UITextField!
     @IBOutlet weak var txty: UITextField!
     @IBOutlet weak var txtx: UITextField!
+    
     override func viewDidLoad()
     {super.viewDidLoad()
         // Do any additional setup after loading the view.
