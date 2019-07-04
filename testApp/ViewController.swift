@@ -35,24 +35,15 @@ class ViewController: UIViewController {
     
     @objc func update() {
         if let accelerometerData = motionManager.accelerometerData {
-            txtx.text=String(accelerometerData.acceleration.x)
-            txty.text=String(accelerometerData.acceleration.y)
-            txtz.text=String(accelerometerData.acceleration.z)
+            txtx.text=String(format: "%.3f",accelerometerData.acceleration.x)
+            txty.text=String(format: "%.3f",accelerometerData.acceleration.y)
+            txtz.text=String(format: "%.3f",accelerometerData.acceleration.z)
             
         }
         if let gyroData = motionManager.gyroData {
-            txtx2.text=String(gyroData.rotationRate.x)
-            txty2.text=String(gyroData.rotationRate.y)
-            txtz2.text=String(gyroData.rotationRate.z)
+            txtx2.text=String(format: "%.3f",gyroData.rotationRate.x)
+            txty2.text=String(format: "%.3f",gyroData.rotationRate.y)
+            txtz2.text=String(format: "%.3f",gyroData.rotationRate.z)
         }
-        /*
-        if let magnetometerData = motionManager.magnetometerData {
-            print(magnetometerData)
-        }
-        if let deviceMotion = motionManager.deviceMotion {
-            print(deviceMotion)
-        } */
-    }
+      }
 }
-
-
