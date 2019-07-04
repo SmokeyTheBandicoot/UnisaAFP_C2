@@ -14,6 +14,10 @@
 		5A6C31B222C2267900A7D23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C31B022C2267900A7D23C /* LaunchScreen.storyboard */; };
 		5A6C31BD22C2267A00A7D23C /* testAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C31BC22C2267A00A7D23C /* testAppTests.swift */; };
 		5A6C31C822C2267A00A7D23C /* testAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C31C722C2267A00A7D23C /* testAppUITests.swift */; };
+		675F214422CE3A93007ED6D5 /* DataRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F214322CE3A93007ED6D5 /* DataRecord.swift */; };
+		675F214622CE3D80007ED6D5 /* DataRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F214522CE3D80007ED6D5 /* DataRecorder.swift */; };
+		675F214B22CE414C007ED6D5 /* Coords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F214A22CE414C007ED6D5 /* Coords.swift */; };
+		675F214D22CE416D007ED6D5 /* FaceIDAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F214C22CE416D007ED6D5 /* FaceIDAngle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		5A6C31C322C2267A00A7D23C /* testAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6C31C722C2267A00A7D23C /* testAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAppUITests.swift; sourceTree = "<group>"; };
 		5A6C31C922C2267A00A7D23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		675F214322CE3A93007ED6D5 /* DataRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRecord.swift; sourceTree = "<group>"; };
+		675F214522CE3D80007ED6D5 /* DataRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRecorder.swift; sourceTree = "<group>"; };
+		675F214A22CE414C007ED6D5 /* Coords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coords.swift; sourceTree = "<group>"; };
+		675F214C22CE416D007ED6D5 /* FaceIDAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAngle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		5A6C31A622C2267800A7D23C /* testApp */ = {
 			isa = PBXGroup;
 			children = (
+				675F214922CE4135007ED6D5 /* Utils */,
 				5A6C31A722C2267800A7D23C /* AppDelegate.swift */,
 				5A6C31A922C2267800A7D23C /* ViewController.swift */,
 				5A6C31AB22C2267800A7D23C /* Main.storyboard */,
 				5A6C31AE22C2267900A7D23C /* Assets.xcassets */,
 				5A6C31B022C2267900A7D23C /* LaunchScreen.storyboard */,
 				5A6C31B322C2267900A7D23C /* Info.plist */,
+				675F214322CE3A93007ED6D5 /* DataRecord.swift */,
+				675F214522CE3D80007ED6D5 /* DataRecorder.swift */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 				5A6C31C922C2267A00A7D23C /* Info.plist */,
 			);
 			path = testAppUITests;
+			sourceTree = "<group>";
+		};
+		675F214922CE4135007ED6D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				675F214A22CE414C007ED6D5 /* Coords.swift */,
+				675F214C22CE416D007ED6D5 /* FaceIDAngle.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675F214422CE3A93007ED6D5 /* DataRecord.swift in Sources */,
+				675F214D22CE416D007ED6D5 /* FaceIDAngle.swift in Sources */,
+				675F214B22CE414C007ED6D5 /* Coords.swift in Sources */,
+				675F214622CE3D80007ED6D5 /* DataRecorder.swift in Sources */,
 				5A6C31AA22C2267800A7D23C /* ViewController.swift in Sources */,
 				5A6C31A822C2267800A7D23C /* AppDelegate.swift in Sources */,
 			);
